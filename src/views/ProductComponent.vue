@@ -31,7 +31,8 @@ const productStore = useProductStore();
 .product-container {
   margin: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; 
+  flex-wrap: wrap; 
 }
 
 .product-card {
@@ -39,6 +40,9 @@ const productStore = useProductStore();
   align-items: center;
   border: 1px solid #ccc;
   padding: 10px;
+  border-radius: 2px;
+  display: inline-block; 
+  width: 300px; 
 }
 
 .image {
@@ -54,15 +58,17 @@ const productStore = useProductStore();
 .add-button {
   padding: 5px;
   min-height: auto;
-  background-color:#0051BA;
+  background-color: #0051BA;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .add-button:hover {
   background-color: #FFDA1A;
   color: black;
   border: 2px solid #0051BA;
+  border-radius: 5px;
 }
 </style>

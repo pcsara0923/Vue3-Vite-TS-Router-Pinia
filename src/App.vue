@@ -19,6 +19,7 @@ const productStore = useProductStore(); //使用
   <div><RouterView /></div>
 </template>
 
+
 <style scoped>
 .custom-menu {
   background-color: #0051BA;

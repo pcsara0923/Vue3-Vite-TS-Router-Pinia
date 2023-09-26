@@ -1,3 +1,10 @@
+<script setup lang="ts">
+// 引入 stores
+import { useProductStore } from "@/stores/counter.ts"; 
+// 使用
+const productStore = useProductStore(); 
+</script>
+
 <template>
   <main>
     <h2 style="text-align: center">/購物車/</h2>
@@ -18,34 +25,31 @@
   </main>
 </template>
 
-<script setup lang="ts">
-// 引入 stores
-import { useProductStore } from "@/stores/counter.ts"; 
-// 使用
-const productStore = useProductStore(); 
-</script>
 
 <style scoped>
 .cart-container {
   margin: 20px;
   display: flex;
   justify-content: center;
+  border:none;
 }
 
 .cart-item {
   margin: 10px;
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   padding: 10px;
 }
 
 .cart-item-image {
-  flex: 1;
+  /* flex: 1; */
+  display:flex;
 }
 
 .cart-item-details {
   flex: 3;
+  
 }
 
 .image {
@@ -61,6 +65,7 @@ const productStore = useProductStore();
   background-color: #ff0000;
   color: #fff;
   padding: 5px 10px;
+  border-radius:10px;
   border: none;
   cursor: pointer;
 }

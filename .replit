@@ -1,3 +1,7 @@
 language="nodejs"
 entrypoint="src/App.vue"
 run="npm run dev"
+
+[auth]
+pageEnabled = true
+buttonEnabled = false
